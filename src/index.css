@@ -1,0 +1,675 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Archivo+Black:wght@400&display=swap');
+
+/* Variables CSS para colores */
+:root {
+  --color-primary: #959974;
+  --color-secondary: #f3f9cc;
+  --color-accent: #b7b99b;
+  --color-dark: #57574c;
+  --color-light: #fbfbfb;
+}
+
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Utilidades personalizadas */
+.bg-cream {
+  background-color: var(--color-secondary);
+}
+
+/* PORTADA */
+.hero-section {
+  height: 100vh;
+  background-image: url(../multimedia/casamientos.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2),
+    rgba(13, 13, 13, 0.7),
+    rgb(5, 5, 5)
+  );
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.couple-names {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 7rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main-title {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 3rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.cursor {
+  border-right: 3px solid var(--color-primary);
+  animation: blinkCursor 0.7s steps(1) infinite;
+}
+
+.hide-cursor {
+  border-right: none;
+}
+
+/* CUENTA REGRESIVA */
+.countdown-section {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.countdown-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.countdown-decoration {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.decoration-img {
+  width: 15%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.countdown-title {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-number {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.time-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-top: 0.5rem;
+}
+
+/* NUESTRA HISTORIA */
+.story-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-secondary);
+}
+
+.story-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heart-decoration {
+  color: var(--color-accent);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.story-title {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin: 2rem 0;
+}
+
+.story-text {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.story-text p {
+  margin: 1.5rem 0;
+}
+
+/* INVITACIÓN */
+.invitation-section {
+  min-height: 100vh;
+  background-image: url(../multimedia/background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 2rem;
+}
+
+.invitation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(7, 7, 7, 0.5),
+    rgba(243, 249, 204, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.invitation-container {
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.valid-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.heart-icon {
+  color: rgba(245, 245, 245, 0.6);
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.valid-for h3 {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 2rem;
+  color: rgba(245, 245, 245, 0.7);
+  font-weight: 300;
+  text-decoration: overline;
+  margin: 1rem 0;
+}
+
+.invitation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.invitation-card {
+  background-color: rgba(251, 251, 251, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 8px 32px rgba(177, 167, 153, 0.3);
+  color: whitesmoke;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.invitation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(177, 167, 153, 0.4);
+}
+
+.card-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem auto;
+  color: var(--color-accent);
+}
+
+.invitation-card h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.invitation-card p {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+.card-button {
+  background-color: var(--color-dark);
+  color: var(--color-accent);
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.card-button:hover {
+  background-color: #797c5a;
+  color: black;
+  transform: scale(1.05);
+}
+
+.card-button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* REGALO */
+.gift-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-secondary);
+}
+
+.gift-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.gift-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(149, 153, 116, 0.3);
+}
+
+.gift-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+}
+
+.gift-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+  margin: 0 auto 1rem;
+}
+
+.gift-text h3 {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  margin: 1rem 0 2rem;
+  line-height: 1.4;
+}
+
+.bank-details {
+  background-color: rgba(149, 153, 116, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid var(--color-primary);
+}
+
+.bank-details p {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+}
+
+/* DECORACIÓN */
+.decoration-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hearts-decoration {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hearts-decoration span {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  animation: heartBeat 2s ease-in-out infinite;
+}
+
+.hearts-decoration span:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+/* DESCRIPCIÓN */
+.description-section {
+  padding: 4rem 2rem;
+  background-color: var(--color-secondary);
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.description-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.description-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(149, 153, 116, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(200, 200, 164, 0.3);
+}
+
+.description-text p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  font-weight: 500;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* MENSAJE FINAL */
+.final-message {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--color-secondary), rgba(149, 153, 116, 0.1));
+}
+
+.final-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.final-container p {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.final-hearts {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-top: 2rem;
+}
+
+/* ANIMACIONES */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blinkCursor {
+  0%, 50% { 
+    border-color: var(--color-primary); 
+  }
+  50%, 100% { 
+    border-color: transparent; 
+  }
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Animación fade-up para scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Móviles (hasta 576px) */
+@media (max-width: 576px) {
+  .couple-names {
+    font-size: 3rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    white-space: normal;
+  }
+
+  .countdown-grid {
+    gap: 1.5rem;
+  }
+
+  .time-number {
+    font-size: 2rem;
+  }
+
+  .time-label {
+    font-size: 1rem;
+  }
+
+  .decoration-img {
+    width: 30%;
+  }
+
+  .story-title {
+    font-size: 2rem;
+  }
+
+  .story-text {
+    font-size: 1.1rem;
+  }
+
+  .invitation-cards {
+    gap: 2rem;
+  }
+
+  .invitation-card {
+    max-width: 90%;
+  }
+
+  .valid-for h3 {
+    font-size: 1.5rem;
+  }
+
+  .gift-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .gift-image {
+    max-width: 90%;
+  }
+
+  .gift-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .description-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .description-image {
+    max-width: 90%;
+  }
+
+  .description-text {
+    padding: 1.5rem;
+  }
+
+  .description-text p {
+    font-size: 1rem;
+  }
+
+  .final-container p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablets (577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .couple-names {
+    font-size: 4.5rem;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
+  }
+
+  .countdown-grid {
+    gap: 2rem;
+  }
+
+  .time-number {
+    font-size: 2.5rem;
+  }
+
+  .story-title {
+    font-size: 2.5rem;
+  }
+
+  .story-text {
+    font-size: 1.2rem;
+  }
+
+  .invitation-card {
+    max-width: 80%;
+  }
+
+  .gift-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .description-text p {
+    font-size: 1.1rem;
+  }
+
+  .final-container p {
+    font-size: 1.9rem;
+  }
+}
+
+/* Escritorios pequeños (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .couple-names {
+    font-size: 5.5rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .invitation-card {
+    max-width: 300px;
+  }
+
+  .final-container p {
+    font-size: 2rem;
+  }
+}
+
+/* Escritorios grandes (1025px+) */
+@media (min-width: 1025px) {
+  .hero-section {
+    background-attachment: fixed;
+  }
+
+  .invitation-section {
+    background-attachment: fixed;
+  }
+}
