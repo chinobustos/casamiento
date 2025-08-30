@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Calendar, MapPin, Heart, Gift } from 'lucide-react';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     seconds: 0
   });
 
-  const [titleText, setTitleText] = useState("h1");
+  const [titleText, setTitleText] = useState('h1');
   const fullTitle = '¡Nos Casamos!';
 
   // Fecha del casamiento - 22 de Noviembre 2025, 21:00
@@ -81,7 +81,7 @@ function App() {
           <h2 className="couple-names">Daniela y Gustavo</h2>
           <h1 className="main-title">
             {titleText}
-            <span className={`cursor ${titleText === fullTitle ? 'hide-cursor' : ''}`}></span>
+            <span className={`cursor ${titleText === fullTitle ? 'hide-cursor' : ''} `}></span>
           </h1>
         </div>
       </section>
