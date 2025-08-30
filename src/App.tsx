@@ -127,24 +127,36 @@ function App() {
           <div className="heart-decoration">♥</div>
           <h2 className="story-title">Nuestra Historia</h2>
           <div className="story-text">
-            <p>
-              Nos conocimos en un momento inesperado, pero desde entonces nuestras vidas se han entrelazado de una manera mágica.
-            </p>
-            <p>
-              Desde ese primer encuentro, hemos compartido risas, aventuras y momentos que nos han acercado cada vez más.
-            </p>
-            <p>
-              Hoy, después de años de amor y complicidad, hemos decidido dar el siguiente paso y unirnos en matrimonio.
-            </p>
-            <p>
-              Queremos compartir con ustedes este hermoso viaje que hemos recorrido juntos y celebrar el amor que nos une.
-            </p>
-            <p>
-              Gracias por ser parte de nuestra historia y por acompañarnos en este día tan especial.
-            </p>
+        <p>
+          Nos conocimos en un momento inesperado, pero desde entonces nuestras vidas se han entrelazado de una manera mágica.
+        </p>
+        <p>
+          Desde ese primer encuentro, hemos compartido risas, aventuras y momentos que nos han acercado cada vez más.
+        </p>
+        <p>
+          Hoy, después de años de amor y complicidad, hemos decidido dar el siguiente paso y unirnos en matrimonio.
+        </p>
+        <p>
+          Queremos compartir con ustedes este hermoso viaje que hemos recorrido juntos y celebrar el amor que nos une.
+        </p>
+        <p>
+          Gracias por ser parte de nuestra historia y por acompañarnos en este día tan especial.
+        </p>
           </div>
           <div className="heart-decoration">♥</div>
         </div>
+        <img 
+          src="/multimedia/viejos.jpeg" 
+          alt="Foto de Daniela y Gustavo" 
+          style={{
+            width: '100%',
+            maxWidth: '400px',
+            display: 'block',
+            margin: '20px auto',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+          }}
+        />
       </section>
 
       {/* Invitación */}
@@ -193,8 +205,8 @@ function App() {
             <Gift className="gift-icon" />
             <h3>El mejor detalle es tu presencia, pero si querés, podés hacernos un regalo a la siguiente cuenta:</h3>
             <div className="bank-details">
-              <p><strong>CBU:</strong> 1234567890123456789012</p>
-              <p><strong>Alias:</strong> DANIELA.GUSTAVO</p>
+              <p><strong>CBU:</strong>0340060908600075504009</p>
+              <p><strong>Alias:</strong>ESTRELLAS.SIEMPRE</p>
             </div>
           </div>
         </div>
@@ -204,7 +216,7 @@ function App() {
       <section className="decoration-section fade-up">
         <div className="hearts-decoration">
           <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
-          <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+          <span>♥</span><span>♥</span><span>♥</span><span>♥</span>
         </div>
       </section>
 
