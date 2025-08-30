@@ -173,7 +173,7 @@ function App() {
             <div className="invitation-card">
               <Calendar className="card-icon" />
               <h3>Fecha</h3>
-              <p>22 de Noviembre 2025 | 21 hs</p>
+              <p>22 de Noviembre 2025|21 hs</p>
               <button className="card-button" >
                 <a href="https://forms.gle/626pHCmAe5WiqRyP8">CONFIRMAR ASITENCIA</a>
               </button>
@@ -182,7 +182,7 @@ function App() {
             <div className="invitation-card">
               <MapPin className="card-icon" />
               <h3>Lugar</h3>
-              <p>Salón de eventos "LAS ROCAS"</p>
+              <p>Salón de eventos"LAS ROCAS"</p>
               <button className="card-button">
                 <a href="https://maps.app.goo.gl/xSzXhJdwagrz1VnG8" target="_blank" rel="noopener noreferrer">
                   CÓMO LLEGAR
@@ -196,17 +196,13 @@ function App() {
       {/* Regalo */}
       <section className="gift-section fade-up">
         <div className="gift-container">
-          <img 
-            src="../multimedia/regalo.jpg" 
-            alt="Regalo de boda" 
-            className="gift-image"
-          />
           <div className="gift-text">
             <Gift className="gift-icon" />
             <h3>El mejor detalle es tu presencia, pero si querés, podés hacernos un regalo a la siguiente cuenta:</h3>
             <div className="bank-details">
               <p><strong>CBU:</strong>0340060908600075504009</p>
               <p><strong>Alias:</strong>ESTRELLAS.SIEMPRE</p>
+              <p><strong>Banco Patagonia</strong></p>
             </div>
           </div>
         </div>
