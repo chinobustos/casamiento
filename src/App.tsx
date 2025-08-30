@@ -90,7 +90,7 @@ function App() {
       <section className="countdown-section fade-up">
         <div className="countdown-container">
           <div className="countdown-decoration">
-            <img src="./multimedia/fondo.jpg" alt="Decoración floral"  className="decoration-img" />
+            <img src="./multimedia/fondo.jpg" alt="Decoración "  className="decoration-img" />
           </div>
           <h2 className="countdown-title">Cuenta Regresiva</h2>
           <div className="countdown-grid">
