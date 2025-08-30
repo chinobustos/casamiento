@@ -149,7 +149,7 @@ function App() {
           src="/multimedia/viejos.jpeg" 
           alt="Foto de Daniela y Gustavo" 
           style={{
-            width: '100%',
+            width: '80%',
             maxWidth: '400px',
             display: 'block',
             margin: '20px auto',
