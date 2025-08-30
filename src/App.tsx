@@ -175,7 +175,7 @@ function App() {
               <h3>Fecha</h3>
               <p>22 de Noviembre 2025 | 21 hs</p>
               <button className="card-button" >
-                <a href="https://forms.gle/ExnLj4C8o64sbKPt6">CONFIRMAR ASITENCIA</a>
+                <a href="https://forms.gle/626pHCmAe5WiqRyP8">CONFIRMAR ASITENCIA</a>
               </button>
             </div>
             
